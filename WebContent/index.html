@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Shopping List</h1>
+	
+	<p>
+     Apple  $2.20    
+	<button onclick="addItem('Apple ', 2.20)">Add</button>
+	</p>
+	<p>
+     Pears  $1.50    
+     <button onclick="addItem('Pears ', 1.50)">Add</button>
+     </p>
+     <p>
+     Strawberry  $4.50    
+     <button onclick="addItem('Strawberry ', 4.50)">Add</button>
+     </p>
+     <p>
+     Oranges  $5.25    
+    <button onclick="addItem('Orange ', 5.25)">Add</button>
+    </p>
+    <button onclick="finalItems">Checkout</button>
+    
+   <h2 id="finalItems">Shopping Cart</h2>
+   
+   <p class="cart">Your Total: </p>
+				<p id="cartTotal"></p>
+	
+
+	<script src="script.js"></script>
+</body>
+</html>
