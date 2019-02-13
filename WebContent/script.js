@@ -14,8 +14,10 @@ function addItem(items, price){
 
 function calcTotals() {
 	var grandTotal = 0;
+	console.log("hello");
 	for (i = 0; i < priceCart.length; i++) {
 		grandTotal = grandTotal + priceCart[i];
+		
 	}
 		var totalEl = document.getElementById("cartTotal");
 		totalEl.textContent = ("$" + Number(grandTotal).toFixed(2));
